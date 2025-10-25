@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bongo Token Hunter - Arcade Game</title>
+    <meta name="description" content="Defend the community as OG Bongo in this exciting arcade shooter game!">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" as="style">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Bongo Token Hunter">
+    <meta property="og:description" content="Defend the community as OG Bongo in this exciting arcade shooter game!">
+    <meta property="og:image" content="assets/images/og-image.png">
+    <meta property="og:url" content="https://YOUR_USERNAME.github.io/bongo-token-hunter">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Your game HTML content from the previous implementation -->
+        <h1 class="text-3xl font-extrabold text-center text-primary mb-4">Bongo Token Hunter</h1>
+        
+        <div id="loadingMessage" class="text-center text-white p-4">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-primary"></div>
+            <p class="mt-2">Loading Game Assets...</p>
+        </div>
+        
+        <div id="game-ui" class="hidden">
+            <!-- Game UI elements -->
+        </div>
+
+        <!-- Modals -->
+    </div>
+
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
+    
+    <!-- Firebase Configuration -->
+    <script src="config/firebase-config.js"></script>
+    
+    <!-- Game Script -->
+    <script type="module" src="game.js"></script>
+</body>
+</html>
